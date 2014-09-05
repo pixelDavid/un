@@ -1,0 +1,117 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none; text-align:center; } 
+
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.grid_12 .flexslider img {height:410px; width:940px; }
+.flexslider {margin: 0; padding: 0; }
+
+.lte8 .grid_12 .flexslider, .ie9 .grid_12 .flexslider, .no-js .flexslider, .ie10 .grid_12 .flexslider {margin-left:-1px;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; width:580px;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: 0 0 0px; background: #fff; position: relative;}
+
+.flexslider.margin60 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 0 60px;
+    position: relative;
+}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides-lower .slides img {width:580px; position:relative; right:1px;}
+.flexslider .slides-lower .slides li {width:580px; }
+.flex-scroll {height:180px; display:none; padding-top:15px;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {display:none;}
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(/usr/flexslider2/image/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; /*opacity: 0;*/ -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; top:-25px}
+.flex-direction-nav .flex-prev {left: -36px; top:-25px}
+
+body.hp .flex-scroll ::-moz-selection {background-color:transparent;color:inherit;}
+body.hp .flex-scroll ::-webkit-selection {background-color:transparent;color:inherit;}
+body.hp .flex-scroll ::selection { background-color:transparent;color:inherit;}
+
+.flex-scroll .flex-direction-nav {display:block;}
+.flex-scroll .flex-direction-nav { margin-left: 44px;position: relative; width: 860px;}
+.flex-scroll .flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; /*background: url(/usr/flexslider2/image/bg_direction_nav.png)*/ position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; /*opacity: 0;*/ -webkit-transition: all .3s ease; overflow:hidden; outline:none;}
+.flex-scroll .flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; background:url(/usr/theme/image/right-arrow.png) no-repeat; top:20px; outline:none;}
+.flex-scroll .flex-direction-nav .flex-prev {left: -36px; background:url(/usr/theme/image/left-arrow.png) no-repeat; top:20px; outline:none;}
+
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px; top:20px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px; top:20px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-scroll:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+
+/* Control Nav */
+.grid_12 .flex-control-nav {text-align: center; width: 100%; margin-top:30px;}
+.flex-scroll .flex-control-nav { text-align:center; width: 940px; position:relative; bottom:0px; left:0px;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li a {background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5); background: #999;border-radius: 20px 20px 20px 20px;box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;cursor: pointer;display: block;height: 11px; position: relative; text-indent: -9999px; width: 11px; behavior: url("/usr/theme/js/PIE.htc"); }
+.flex-control-nav li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-nav li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-nav2 {
+  margin-left: -100px;
+  position: relative;
+  top: -20px;
+}.flex-control-nav2 li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav2 li a {background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5); background: #999; border-radius: 20px 20px 20px 20px;box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;cursor: pointer;display: block;height: 11px; text-indent: -9999px;width: 11px; behavior: url("/usr/theme/js/PIE.htc"); position:relative;}
+.flex-control-nav2 li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-nav2 li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+.flex-scroll .flex-viewport {height:140px; border-top:1px #dddddd solid; border-left:1px #dddddd solid; border-right:1px #dddddd solid;}
+.flex-scroll .flex-viewport img {margin-top:30px;}
+.flex-scroll .flex-control-nav {height:30px; background-color:#222222; }
+
+ul.customnav { background: none repeat scroll 0 0 #222222;color: #FFFFFF;height: 30px;position: relative;top: 171px;text-align:center; }
+ul.customnav li {font-size:11.5px;display: inline;font-weight: bold; margin: 8px 43px;padding-top: 5px;position: relative;text-transform: uppercase;top: 6.25px;}
+ul.customnav li {cursor:pointer; cursor:hand;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}

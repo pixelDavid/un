@@ -1,0 +1,34 @@
+<div id="side-nav">
+<div class="sn-contact">
+<ul class="myriadpro">
+<li class="new"><span><a href="/vehicle/search/new/">New Vehicles</a></span><span class="rightarrow">&gt;</span></li>
+<br />
+<li class="used"><span><a href="/vehicle/search/preowned/">Pre-Owned Vehicles</a></span><span class="rightarrow">&gt;</span></li>
+<br />
+<li class="directions"><span><a href="/dealership/location/">Get Directions</a></span><span class="rightarrow">&gt;</span></li>
+<br />
+<li class="facebook"><span><a href="http://www.facebook.com/unitednissanlv">Find Us on Facebook</a></span><span class="rightarrow">&gt;</span></li>
+</ul>
+
+<div class="infobox">
+<br />
+<p><b>United Nissan</b></p>
+<p>3025 E. Sahara Avenue</p>
+<p>Las Vegas, NV 89104</p>
+<hr />
+<p><b>Sales:</b> 866-535-5111</p>
+<p><b>Service:</b> 800-417-7434</p>
+<p><b>Parts:</b> 702-207-8080</p>
+<br />
+<p><b>Parts Dept. Hours:</b></p>
+<p><b>Mon:</b> 7:00AM - 7:00PM</p>
+<p><b>Tues:</b> 7:00AM - 7:00PM</p>
+<p><b>Weds:</b> 7:00AM - 7:00PM</p>
+<p><b>Thurs:</b> 7:00AM - 7:00PM</p>
+<p><b>Fri:</b> 7:00AM - 7:00PM</p>
+<p><b>Sat:</b> 7:00AM - 5:00PM</p>
+<p><b>Sun:</b> Closed</p>
+<br /><br />
+</div>
+</div>
+</div>

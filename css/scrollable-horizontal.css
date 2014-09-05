@@ -1,0 +1,80 @@
+
+/*
+  root element for the scrollable.
+  when scrolling occurs this element stays still.
+  */
+.scrollable {
+
+    /* required settings */
+    position:relative;
+    overflow:hidden;
+    width: 700px;
+    height:120px;
+	margin-top:10px;
+	margin-bottom:25px;
+
+    /* custom decorations 
+    border:1px solid #ccc;
+    background:url(/media/img/gradient/h300.png) repeat-x;*/
+}
+
+/*
+   root element for scrollable items. Must be absolutely positioned
+   and it should have a extremely large width to accomodate scrollable
+   items.  it's enough that you set the width and height for the root
+   element and not for this element.
+*/
+.scrollable .items {
+    /* this cannot be too large */
+    width:20000em;
+    position:absolute;
+    clear:both;
+	margin-top:8px;
+}
+
+.items div {
+    float:left;
+   width:935px;
+}
+
+/* single scrollable item */
+.scrollable img {
+    float:left;
+	margin-left:-10px;
+   /*margin:20px 5px 20px 50px;
+    background-color:#fff;
+    padding:2px;
+    border:1px solid #ccc;
+    width:100px;
+    height:75px;
+
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+	*/
+}
+
+/* Margin Correction for left/right side of scrollable banner */
+
+.scrollable div.one-five {margin-right:-10px;}
+.scrollable div.five-ten {margin-left:-10px;}
+.scrollable div.ten-fifteen {margin-left:-10px;}
+.scrollable div.fifteen-twenty {margin-left:-13px;}
+
+/*
+.scrollable div.sports {margin-right:60px;}
+.scrollable div.sports img {margin-left:75px;}
+.scrollable div.electric img {margin-left:75px;}
+.scrollable div.cross img {margin-left:-13px;}
+.scrollable div.mini img {margin-left:75px; margin-right:50px;}
+.scrollable div.mini {margin-left:90px; margin-right:50px;}
+.scrollable div.trucks img {margin-left:110px;}
+.scrollable div.trucks {margin-left:75px;}
+*/
+
+/* active item */
+.scrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+

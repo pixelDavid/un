@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pmm>
+    <pages>
+        <page id="home" class="current">
+            <body>
+                <common>
+                    <header>headerLogo|banner </header>
+                    <footer>research|footer</footer>
+                </common>
+                <contents>
+                    <content type="list" title="{DLR:NAME}">
+                        <list type="ul" class="rounded">
+                            <item label="New Inventory" href="#invNew" class="invSearch"></item>
+							<item label="New Inventory" href="#banners1" class="banners1"></item>
+                            <item label="Used Inventory" href="#invUsed" class="invSearch"></item>
+                            <item label="Finance" href="#finance"></item>
+							<item label="Schedule Service" href="#serviceAppointment" class="getForm"></item>
+							<item label="Order Parts" href="#partsQuote" class="getForm"></item>
+                            <item label="Dealership" href="#dealership"></item>
+                        </list>
+                    </content>
+                </contents>
+            </body>
+        </page>
+        <page id="research">
+            <body>
+                <common>
+                    <header>headerLogo</header>
+                    <footer>research|goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="list" title="Model Selection">
+                        <list type="ul" class="rounded" data="dynamic" call="loadModelLineup(make)" />
+                    </content>
+                </contents>
+            </body>
+        </page>
+        <page id="finance">
+            <body>
+                <common>
+                    <header>headerLogo|banner</header>
+                    <footer>goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="list" title="Finance Department">
+                        <list type="ul" class="rounded">
+                            <item label="Get Pre-Approved" href="#getPreApproved" class="getForm"></item>
+                            <item label="Get a Quick Quote" href="#quickQuote" class="getForm"></item>
+                            <item label="Trade-In Value" href="#tradeIn" class="getForm"></item>
+                        </list>
+                    </content>
+                </contents>
+            </body>
+        </page>
+        <page id="dealership">
+            <body>
+                <common>
+                    <header>headerLogo|banner</header>
+                    <footer>goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="list" title="Dealership">
+                        <list type="ul" class="rounded">
+                            <item label="About Us" href="#about"></item>
+                            <item label="Hours and Location" href="#hours"></item>
+                            <item label="Get Directions" href="http://maps.google.com/maps?daddr={DLR:STREET},{DLR:CITY},{DLR:STATE:ABREV},{DLR:ZIP}" />
+                            <item label="Questions? Call Us Today." href="tel:{DLR:SALES:PHONE}" />
+                        </list>
+                    </content>
+                </contents>
+            </body>
+        </page>
+		 <page id="banners1">
+            <body>
+                <common>
+                    <header>headerLogo</header>
+                    <footer>goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="file" src="user" file="banners1.blk.tpl.html" title="About Us">
+                    </content>
+                </contents>
+            </body>
+        </page>
+        <page id="about">
+            <body>
+                <common>
+                    <header>headerLogo</header>
+                    <footer>goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="file" src="user" file="aboutus.blk.tpl.html" title="About Us">
+                    </content>
+                </contents>
+            </body>
+        </page>
+        <page id="hours">
+            <body>
+                <common>
+                    <header>headerLogo</header>
+                    <footer>goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="file" src="user" file="hours_location.blk.tpl.html" title="Hours and Location" />
+                </contents>
+            </body>
+        </page>
+        <page id="disclaimer">
+            <body>
+                <common>
+                    <header>headerLogo</header>
+                    <footer>goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="file" src="user" file="disclaimer.blk.tpl.html" title="Disclaimer">
+                        <static>
+                            <![CDATA[
+                            
+                            ]]>
+                        </static>
+                    </content>
+                </contents>
+            </body>
+        </page>
+        <page id="privacy">
+            <body>
+                <common>
+                    <header>headerLogo</header>
+                    <footer>goHome|footer</footer>
+                </common>
+                <contents>
+                    <content type="file" src="user" file="privacy.blk.tpl.html" title="Privacy" />
+                </contents>
+            </body>
+        </page>
+
+        <common>
+            <element id="common_footer">
+                <content type="file" src="user" file="footer.blk.tpl.html" />
+            </element>
+            <element id="common_headerLogo">
+                <content type="static">
+                    <static>
+                        <![CDATA[<a href="#home"><img src="/usr/_mobile/images/logo.png" /></a>]]>
+                    </static>
+                </content>
+            </element>
+            <element id="common_goHome" title="{DLR:NAME}">
+                <content type="list" title="">
+                    <list type="ul" class="rounded">
+                        <item label="Previous" class="goback" />
+                        <item label="Home" href="#home" />
+                    </list>
+                </content>
+            </element>
+            <element id="common_research" title="Research">
+                <content type="list" title="">
+                    <list type="ul" class="rounded">
+                        <item label="Models and Trims" href="#research" />
+                        <item label="Request More Information" href="#contactUs" class="getForm" />
+                        <item label="Get Pre-Approved" href="#getPreApproved" class="getForm" />
+                        <item label="Get a Quick Quote" href="#quickQuote" class="getForm" />
+                        <item label="Trade-In Value" href="#tradeIn" class="getForm" />
+                        <item label="Questions? Call Us Today." href="tel:{DLR:SALES:PHONE}" />
+                    </list>
+                </content>
+            </element>
+            <element id="common_invCats" title="">
+                <content type="file" src="global" file="vsrch/pmm.mobile/vsrch_select.blk.tpl.html"/>
+            </element>
+        </common>
+    </pages>
+</pmm>

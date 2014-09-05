@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url("960.css");
+@import url("susy/stylesheets/screen.css"); 
+
+
+/*SUSY SPECIFIC OVERRIDES */
+#pmmVehicleSearch #yui-main{max-width:650px!important;}
+#banner {display:none;}
+.vsrch-tb-layout {display:none;}
+/*#hd {display:none;}
+#ft {display:none;}
+.disclaimer {display:none;}*/
+body, #pmm-doc-995 {min-width:0px!important; width:auto!important;}
+#pmmVehicleSearch .pmm-yui-t1 div#bd { width:auto!important; margin:60px auto 0px;}
+#pmmVehicleSearch .pmm-yui-t1 #yui-main .yui-b { background-color: #FFFFFF; margin-left: 0;}
+#pmmVehicleSearch .results-stats-pager-listing .pgs {background-color: #D1D1D1;padding: 1px 4px;color: #444;font-weight: normal; margin: 5px; display: inline-block;padding: 12px;}
+#pmmVehicleSearch .results-stats-pager-listing .pgs:first-child {margin-left:0px;}
+#pmmVehicleSearch .results-stats-pager-listing .pgs.current {background-color:#000000; color:#ffffff;}
+#pmmVehicleSearch .yui-b .results-toolbar {margin-bottom: 20px;padding-left: 0px;}
+.results-stats-pager .pg-next, .results-stats-pager .pg-prev { background-color:#666666; color:#ffffff; display:inline-block; *display:inline; zoom:1; padding:12px; vertical-align:top; margin-top:5px;}
+body .pmm-yui-t1 .yui-b {background-color: #000000;float: left;margin: 60px 15px 0;width:auto;}
+.yui-b #srchFilter li a { color:#444; text-decoration:none;}
+#srchFilter {background-color: #F9F9F9;border: 1px solid #DDDDDD;height: auto;margin-bottom: 6px;width: auto!important;}
+.results-stats-pager-listing .pgs { text-decoration: none; }
+#searchForm #doSearch, #searchForm #doNewSearch { padding:10px 63px 12px 10px; text-transform:uppercase; font-size:11px; margin:0px; background-color:#000; font-weight:bold; text-decoration:none; display:inline-block;  margin-bottom:10px; max-width:200px;}
+#searchForm #advSrchToggle { padding:10px 63px 12px 10px; text-transform:uppercase; font-size:11px; margin:0px;  background-color:#000; font-weight:bold; text-decoration:none; font-family: Arial, sans-serif; color: #fff; display:inline-block; max-width:250px; cursor:pointer;}
+#pmmVehicleSearch .pmm-yui-t1 #yui-main { border: 0 none; margin-right: 0; margin-top: 0px;  min-height: 750px; /* width: 700px !important; */ margin-left:0;}
+#pmmVehicleSearch .yui-b #results { border-top:0px!important; border-bottom:0px!important; /*margin-bottom:55px;*/}
+#pg-vspecs #bd div#yui-main div.yui-b div#pmm-main-content {border: none;  margin:30px auto 0px; width:auto; padding:15px 0px;}
+html.touch #pg-vspecs .tour360-tab { display: none; }
+/*#pmmVehicleSearch .results-stats-pager-listing .pgs { background-color:transparent!important; }*/ 
+/*#pmmVehicleSearch .results-stats-pager-listing .pgs.current { color:#ff0000!important; font-weight:bold; }*/ 
+/*#pmmVehicleSearch .priceList { margin-bottom:40px; }*/ 
+/*}*/
+
+/* Global Classes */
+
+
+
+/* Universal */
+
+a, a:hover, a:visited {color:#d4002d;}
+
+
+.font18 {font-size:18px;}
+.myriadpro {font-family: 'Myriad Pro', 'PT Sans Narrow', Verdana, Geneva, sans-serif; font-weight:normal!important;  letter-spacing: -0.25px;}
+.grey {background-color:#d0d0d0}
+.font10 {font-size:10px;}
+.taRight {text-align:right;}
+.margBtm70 {margin-bottom:70px;}
+.scrollable-border { border:solid #dddddd 1px; background:url("/usr/theme/image/scrollable-bg.png") repeat-x;  }
+div.versa {width:580px!important; margin-right:50px;}
+
+/* Twitter link box color */
+
+#nav a.twitter { background:#0099FF; margin:-5px -10px -10px -9px; padding:10px; display:block; }
+
+/* Header */
+
+#header {font-family:Verdana, Geneva, sans-serif;}
+#header .header-lft { width:440px; height:103px; float:left;}
+#header .header-rgt { width:500px; height:103px; float:left; border-top: #cf1431 4px solid;}
+#header p.united-nissan {float:left; margin-top:23px; font-size:26px; }
+#header p.sales-address {float:right; margin-top:23px; text-align:right;}
+#header p.sales-address span.sales {font-weight:bold;}
+#header p.sales-address span.addr {margin-top:10px; position:relative; top:5px;}
+
+/* Footer */
+#footer {background-color:#ffffff; width:auto; height:140px; margin:0 auto; margin-top:30px;}
+#footer img {float: left;}
+#footer .inner {width:auto; margin:0 auto;}
+#footer p {text-align:left; float:left;}
+#footer .inner hr  {color: #bdbdbd;}
+#footer .footerlinks {float: right;}
+
+/* Homepage */
+.hp .container_12 .grid_8 {margin-right: 51px; width: 579px;}
+.hp .new_vehicles {background:url("/usr/theme/image/get-started-new-vehicles.jpg") no-repeat; height:220px; text-align:right; text-transform:uppercase; font-family: Arial, sans-serif; color:#777777; font-size:14px;}
+.hp .new_vehicles a, .hp .preowned_vehicles a, .hp .new_vehicles a:hover, .hp .preowned_vehicles a:hover, .hp .new_vehicles a:visited, .hp .preowned_vehicles a:visited { color:inherit; display: block;height: 90%;width: 100%; text-decoration:none; }
+.hp .new_vehicles p {margin-top:20px; margin-right:20px;}
+.hp .new_vehicles img {margin-top:15px; margin-right:20px;}
+.hp .new_vehicles span {color:#000000; font-size:18px; font-weight:bold;}
+.hp .preowned_vehicles {background:url("/usr/theme/image/pre-owned-vehicles.jpg") no-repeat; height:220px; text-align:right; text-transform:uppercase;  font-family: Arial, sans-serif; color:#FFFFFF; font-size:14px; text-shadow: 0.5px 0.5px 0.5px #737373; filter: dropshadow(color=#737373, offx=0.5, offy=0.5); behavior: url("/usr/theme/js/PIE.htc");}
+.hp .preowned_vehicles p {margin-top:20px; margin-right:20px; }
+.hp .preowned_vehicles img {margin-top:15px; margin-right:20px; }
+.hp .preowned_vehicles span {color:#FFFFFF; font-size:18px;}
+.hp .service .service-inside {background:url("/usr/theme/image/appointment.jpg") no-repeat;  height:155px; width:340px;  position:relative; right:40px;}
+.hp .service .service-inside p {color:#FFFFFF; margin-left:20px; padding-top: 95px; text-transform:uppercase; font-size:14px;}
+.hp .service .service-inside p span {font-weight:bold; font-size:18px;}
+.hp .service .service-inside a, .service .service-inside a:visited, .service .service-inside a:hover {text-decoration:none;}
+.hp .service .parts-inside {background:url("/usr/theme/image/parts.jpg") no-repeat; height:154px; width:340px; position:relative; right:40px; }
+.hp .service .parts-inside p {color:#FFFFFF; margin-left:20px; padding-top: 20px; text-transform:uppercase; font-size:14px; padding-bottom:90px;}
+.hp .service .parts-inside p span {font-weight:bold; font-size:18px;}
+.hp .service .parts-inside a, .service .parts-inside a:visited, .service .parts-inside a:hover {text-decoration:none;}
+.hp .redbox { background-color:#cf1431; height:310px; color:#FFFFFF;}
+.hp .redbox a { color:#ffffff;}
+.hp .redbox p { margin-top:30px; margin-left:28px;}
+.hp .redbox p span {font-weight:bold; text-transform:uppercase; }
+.hp .lineup {height:228px; background-color:#222222; color:#FFFFFF; }
+.hp .lineup ul {float:left; margin-top:25px; font-size:11px;}
+.hp .lineup ul span {font-weight:bold; font-size:12px;}
+.hp .lineup ul li {margin-bottom:12px;}
+.hp .lineup ul.cars {margin-left:28px;}
+.hp .lineup ul.cross-suv {margin-left:50px;}
+.hp .lineup ul.sports {margin-left:60px;}
+.hp .lineup ul.minivans {margin-left:60px;}
+.hp .lineup ul.trucks {margin-left:80px;}
+.hp .lineup ul.electrics {margin-left:70px;}
+.hp .lineup a, .lineup a:visited, .lineup a:hover { text-decoration:none; color:#FFFFFF; } 
+.hp_foot p {position:relative; top:12px; margin-left:28px; width:555px;}
+.hp_foot p a, .hp_foot p a:hover, .hp_foot p a:active, .hp_foot p a:visited {text-transform:none!important; text-decoration:none!important; color:#222222;}
+.hp_foot p span {margin-left:41px;}
+#concierge-tab { cursor:pointer; position:fixed; left:-41px;top:220px; -webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); z-index:9999; behavior: url("/usr/theme/js/PIE.htc");  }
+.lte8 #concierge-tab, .ie8 #concierge-tab { cursor:pointer; position:fixed; left:-43px; top:220px; -webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); z-index:9999;  behavior: url("/usr/theme/js/PIE.htc"); }
+.hp #concierge-panel { display:block; position:fixed; z-index:99999; text-align:left;  left:0px; top:160px; background-color:#cf1431; color:#fceff1; width:270px; height:360px;  -webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); behavior: url("/usr/theme/js/PIE.htc"); }
+#concierge-panel { display:block; position:fixed; z-index:999; text-align:left;  left:0px; top:160px; background-color:#cf1431; color:#fceff1; width:270px; height:360px;  -webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); behavior: url("/usr/theme/js/PIE.htc"); }
+.lte8 #concierge-panel, .ie8 #concierge-panel { display:block; position:fixed; text-align:left;  left:0px; top:160px; background-color:#cf1431; color:#fceff1; width:270px; height:410px;  -webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); behavior: url("/usr/theme/js/PIE.htc"); }
+.ie8 #concierge-panel { display:block; position:fixed; text-align:left;  left:0px; top:160px; background-color:#cf1431; color:#fceff1; width:270px; height:410px;  -webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75); z-index:0; behavior: url("/usr/theme/js/PIE.htc"); }
+.lte8 .hp #concierge-panel { height:360px; }
+.lte8 #concierge-panel { height:360px; }
+.ie7 #concierge-panel .frmLead {position:relative; top:-50px;}
+#pmmVehicleSearch #concierge-panel {height:370px;}
+#pmmVehicleSearch #concierge-panel span {font-size:16px;}
+#pmmVehicleSearch #concierge-panel p {letter-spacing: -0.8px; padding: 10px; }
+#concierge-panel span { background-color:#000000; width:auto; display:block; color:#ffffff; font-size:18px; padding:10px 15px 10px 10px; }
+#concierge-panel label {color: #FFFFFF;float: left;font-size: 12px;width: 82px;}
+#concierge-panel label span.noteAsReq { display:inline; padding:0; background-color:#CF1431; }
+#pmmVehicleSearch #concierge-panel label span.noteAsReq { display:inline; padding:0; background-color:#CF1431; font-size: 12px; }
+#concierge-panel span img {  margin-left:25px; position:relative; top:-2px; cursor:pointer;}
+.lte8 #concierge-panel span img, .ie8 #concierge-panel span img {  margin-left:8px; position:relative; top:-2px; cursor:pointer; }
+#concierge-panel p { padding:10px; } 
+#concierge-panel h4 { display:none; }
+#concierge-panel input { width:144px; height:25px; border:1px solid #000000; box-shadow: -1px 1px 8px rgba(50, 50, 50, 0.75) inset; -moz-box-shadow: -1px 1px 8px rgba(50, 50, 50, 0.75) inset; -webkit-box-shadow: -1px 1px 8px rgba(50, 50, 50, 0.75) inset; behavior: url("/usr/theme/js/PIE.htc");}
+#concierge-panel .msgReq { display:none; }
+#concierge-panel input#submit {background: url("/usr/theme/image/concierge-submit.png") no-repeat scroll 0 0 transparent;float: right;font-size: 0;height: 23px;margin-right: 23px;width: 83px; border:0px;}
+
+
+
+/* Sidenav */
+
+/*#pg-stnd .pmm-yui-t1 .yui-b {width:180px!important; margin: 75px 0px 50px 55px;}*/
+.pmm-yui-t1 #yui-main {border: 1px solid #DDDDDD;margin-top: 33px;min-height: 750px; /*width: 939px !important;*/}
+.pmm-yui-t1 .yui-b {background-color: #000000;float: left;margin: 60px 15px 0;width: 16.9231em;}
+#side-nav {background-color:#ffffff;}
+#side-nav a, #side-nav a:hover, #side-nav a:visited {color:#ffffff!important; text-decoration:none!important; padding: 8px 0 26px 10px; display:block;}
+#side-nav li {height:35px; text-align:left; text-transform:uppercase; width:180px;}
+#side-nav li span { position:relative; top:8px; left:17px; }
+#side-nav li span.rightarrow { float:right; margin-right: 25px; font-weight:bold; float: right; font-weight: bold; margin-right: 25px; margin-top:-33px;}
+#side-nav li.new {background:url("/usr/theme/image/new_vehicles.png"); text-indent: -9000px; text-transform: capitalize;}
+#side-nav li.used {background:url("/usr/theme/image/preowned_vehicles.png"); text-indent: -9000px; text-transform: capitalize;}
+#side-nav li.facebook {background:url("/usr/theme/image/facebook-side-button.png");text-indent: -9000px; text-transform: capitalize;}
+#side-nav li.directions {background:url("/usr/theme/image/get-directions-side-button"); text-indent: -9000px; text-transform: capitalize;}
+#side-nav ul {color:#ffffff; padding:0!important; margin:0!important;}
+#side-nav-contact ul li {margin-bottom:10px;}
+.infobox {background-color:#f2f2f2; margin-top:25px; min-height:216px; width:180px;}
+.infobox hr {width:90%; margin-top:15px; margin-bottom:15px;}
+.infobox p {margin-left:10px; margin-right:12px; margin-top:12px;}
+
+
+#pg-stnd .pmm-yui-t1 #yui-main .yui-b {margin-bottom: 60px;width: 650px;}
+
+/* contact us page, specials pages */
+
+#pg-vspecials.layout_col2 .pmm-yui-t1 .yui-b, #pg-stnd.layout_col2 .pmm-yui-t1 .yui-b  { position:relative; top:10px; left:50px; width:180px; }
+#pg-vspecials.layout_col2 #pmm-doc-995.pmm-yui-t1 .yui-b h2.pmm-bd-h, #pg-stnd.layout_col2 #pmm-doc-995.pmm-yui-t1 .yui-b h2.pmm-bd-h { font-size:30px; font-family:Verdana, Geneva, sans-serif; margin-top:-35px; min-width:500px;}
+#pg-vspecials.layout_col2 .frmLead ul li textarea, #pg-stnd.layout_col2 .frmLead ul li textarea {width:400px;}
+#pg-vspecials.layout_col2 .infobox hr, #pg-stnd.layout_col2 .infobox hr {margin-bottom: 15px;margin-left: 10px;margin-top: 15px;width: 90%;}
+#pg-vspecials.layout_col2 h2.pmm-bd-h { margin-left:-58px; }
+#vInfo h2 { font-weight:bold; }
+#vInfo h2 span { font-size:10px!important; font-weight:bold!important; }
+div.comments h2 {font-weight:bold; }
+#pg-vspecials.new .row.section.pricing .title { display:none; }
+/* about us page */
+
+#pg-stnd.layout_col2 #pmm-bd-c { width:600px; min-height:500px; margin-top:20px;}
+#pg-stnd.layout_col2 #pmm-bd-c p { margin-bottom: 20px; }
+
+/* parts page */
+
+#pg-stnd.layout_col2 #pmm-bd-c ul li {list-style:disc inside; }
+#pg-stnd.layout_col2 #pmm-bd-c form ul li {list-style:none;}
+
+/* get pre-approved */ 
+
+#pg-stnd.layout_col1 .yui-b h2.pmm-bd-h { font-size:30px; font-family:Verdana, Geneva, sans-serif; margin-top:-35px; min-width:325px; padding:55px;}
+#pg-stnd.layout_col1 #pmm-bd-c {border:1px solid #dddddd; margin-left: 25px; padding: 30px 0px; width: 940px;}
+.layout_col1 #pmm-bd-c iframe { margin-left:30px; background-color:#FFFFFF!important; }
+
+/* incentives */
+
+.layout_col2 #pmm-bd-c iframe { margin-left:-60px; background-color:#FFFFFF!important; }
+
+
+/* service department page */
+
+#pg-stnd.layout_col2 #pmm-bd-c table tr td { padding:20px 40px 20px 0px; }
+
+/* staff page */
+
+#pg-stnd.layout_col2 .staffpage a, #pg-stnd.layout_col2 .staffpage a:visited, #pg-stnd.layout_col2 .staffpage a:hover { text-decoration:none; color:#222222; }
+
+/*Inventory changes*/
+
+/*.preowned.img160 #results, .img160 #results {background-color: transparent;overflow: visible;width: 720px!important;}*/
+
+.img160 #results {border-bottom: none!important;border-top: none!important;padding-bottom: 5px;padding-top: 5px;}
+
+/* Calculator */ 
+
+#pmmCalc h3 { font-size:16px; font-weight:bold; }
+
+/* Google Map */
+
+.hp #map_google {width:620px;height:310px; margin:0px; padding:0px; border:none;}
+#map_google {border: 7px solid #FFFFFF;height: 500px;margin-top: 35px;width: 100%;}
+
+div.sp_tpl.pmm {background-color: #F1F1F1;color: #434343;margin-left: -57px;width: 710px;}
+
+div.sp_tpl.pmm ul.vsrch_pricing li span { color:#F00; font-size:24px; font-weight:bold; }
+div.sp_tpl.pmm ul.vsrch_pricing li label { color::F00; font-size:18px; font-weight:bold;}
+
+/* Inventory Page 
+
+#pmmVehicleSearch {font-family:Verdana, Geneva, sans-serif; !important;}
+#pmmVehicleSearch .pg-vsrch-header h2 {padding-left:19px; padding-top:30px; padding-bottom:30px; font-size:30px; font-family:Verdana, Geneva, sans-serif; color:#444444!important;}
+#pmmVehicleSearch .new-inv-text b, #pmmVehicleSearch .new-inv-text p {padding-bottom:25px; line-height: 25px;}
+#pmmVehicleSearch #pmm-main-content { padding-left:19px; padding-right:20px;}
+#pmmVehicleSearch a, #pmmVehicleSearch a:hover {color:#444444; text-decoration:none!important; text-transform:uppercase;}
+#pmmVehicleSearch div#bd {border:1px solid #dddddd; margin:27px;}
+#pmmVehicleSearch .pmm-yui-t1 #yui-main {border:none!important; position:relative; top:-50px;}
+#pmmVehicleSearch #srchFilter {border:none!important; background-color:#FFFFFF!important; margin-top:15px;}
+.pmm-yui-t1 .yui-b { margin: 75px 0 50px 5px; width: 180px!important; background:transparent!important; position:relative; top:-50px;}
+.ie7 .pmm-yui-t1 .yui-b { margin: 75px 0 50px 5px; width: 180px!important; background:transparent!important; position:relative; top:0px;}
+
+
+#pmmVehicleSearch #srchFilter .section h4 {border:none!important; font-size: 12px;padding: 5px 5px 5px 15px;}
+#pmmVehicleSearch .searchBar {background:url("/usr/theme/image/start_new_search.jpg") no-repeat;color: #FFFFFF;width:180px;height:36px;font-size:11px;text-transform:uppercase; text-decoration:none!important; margin-left:18px; font-family:Arial, Helvetica, sans-serif; display:block; position:relative; top:-50px; }
+#pmmVehicleSearch .searchBar a {color:#ffffff; display:block; z-index:999999; }
+#pmmVehicleSearch #doSearch, #pmmVehicleSearch #doNewSearch { background-color: transparent !important;display: block; text-indent: -9000px; text-transform: capitalize; padding: 18px; position: relative;text-decoration: none !important; display:block;}
+#pmmVehicleSearch #doSearch:hover, #pmmVehicleSearch #doNewSearch:hover {color:#FFFFFF; }
+
+#pmmVehicleSearch #srchFilter .section h1 {font-size: 14px;font-weight: bold;padding-left: 15px;padding-top: 15px;}
+
+#pmmVehicleSearch .results-stats-pagenum {padding-right:none!important; margin-left:340px;}
+#pmmVehicleSearch .results-stats-pager-listing {padding-right:none!important; margin-left:340px;}
+#pmmVehicleSearch .results-stats {color:#444444!important; font-weight: bold;margin-bottom: 5px;width: 700px;}
+#pmmVehicleSearch .results-stats-pager-listing .pgs {background-color: #ffffff!important; color: #444444;}
+#pmmVehicleSearch .results-stats-ttl {color: #444444; font-size: 20px;}
+
+#pmmVehicleSearch .vListStnd {background-color: #FFFFFF;}
+.advHTML .vListStnd .cta {background-color: #FFFFFF!important;padding: 10px 0 28px 0px ;width: 100%; border-bottom:1px solid #DDDDDD; }
+.vListStnd .cta button {background-image:url("/usr/theme/image/view_details.png")!important;   background-repeat: no-repeat;border:none!important;color: #ffffff!important;font-size: 85%;font-weight: bold;height: 26px; margin-left: 0px!important;padding: 0 5px; width:162px;}
+#pmmVehicleSearch .results-toolbar {margin-top:-50px; margin-left:25px;}
+#pmmVehicleSearch .preowned.img160 #results, .img160 #results {background-color: transparent;overflow: visible; margin-left:25px;}
+#pmmVehicleSearch #searchForm {position:relative; top:90px;}
+#pmmVehicleSearch .preowned.img160 #results, .img160 #results {background-color: transparent;margin-top: 10px;overflow: visible;}
+#pmmVehicleSearch .priceList .vsrch_pricing_savings {color: #F00; font-weight:bold;}
+#pmmVehicleSearch .vListStnd ul.vData li.col2 ul li, .vListStnd ul.vData li.col3 ul li {color: #666666;float: none;margin-left: 15px;}
+#pmmVehicleSearch .priceList div.title {font-size: 120%;font-weight: normal; text-align: right; text-decoration: none; color:#999999;}
+#pmmVehicleSearch .priceList .price2 label {color: #F00; font-size: 116%;}
+#pmmVehicleSearch .purchasePrice .price1 label, #pmmVehicleSearch .purchasePrice .price1 span {color: #999999!important; font-size: 110%;}
+#pmmVehicleSearch #srchFilter .section .refineLst h4 {border: medium none !important; font-size: 12px;padding: 5px 5px 5px 0px;font-weight:bold;}
+#pmmVehicleSearch #side-nav {margin-left:18px;}
+#pmmVehicleSearch #side-nav .infobox {width:180px;}
+#pmmVehicleSearch #side-nav li.new, #pmmVehicleSearch #side-nav li.used {display:none;}
+*/
+
+/*############################################*/
+/*              Inventory Listing            */
+/*############################################*/
+#pmmVehicleSearch .pmm-yui-t1 .yui-b {margin: 10px 0 35px 0px; background-color:#ffffff;}
+#pmmVehicleSearch .yui-b #srchFilter {border: 0 none;padding-bottom: 40px; padding-left: 0;/*padding-top: 20px;*/width: 180px; background-color:#ffffff;}
+
+#pmmVehicleSearch #bd #pmm-main-content .new-inv-cta p img {padding-right: 10px; padding-top:15px;}
+#pmmVehicleSearch .pg-vsrch-header h2 { font-size:24px; font-family:Verdana, Geneva, sans-serif; color:#222222; font-weight:bold; padding-bottom:40px; line-height:100%; }
+#pmmVehicleSearch #pmm-main-content { margin-bottom:35px; }
+
+/* Inventory Listing - Results bar */
+#pmmVehicleSearch .results-stats-ttl, .results-stats-found { font-size:18px; font-weight:bold; font-family:Verdana, Geneva, sans-serif; color:#444!important; }
+#pmmVehicleSearch .results-stats-pagenum, .results-stats-pager-listing li { font-family:Verdana, Geneva, sans-serif; }
+
+#pmmVehicleSearch .results-stats-pager, .results-stats-pagenum { float:right; }
+
+/* Inventory Listing - Vehicle Rows */
+#pmmVehicleSearch #results .vListStnd { border-bottom:1px solid #cccccc; padding-bottom:15px; padding-top:20px; }
+#pmmVehicleSearch #results .vListStnd, .advHTML .vListStnd .cta { background-color:transparent; }
+#pmmVehicleSearch .vListStnd .col1 img.vImg { color:#444; border:0px; }
+
+
+#pmmVehicleSearch .priceList div.title { display:none; }
+#pmmVehicleSearch .priceList ul li { text-align:right; }
+#pmmVehicleSearch .advHTML #results .vName { font-size:14px; font-family:Verdana, Geneva, sans-serif; }
+.advHTML #results .vName a  { color:#222222; }
+#pmmVehicleSearch #results .vListStnd .cta { padding-top:13px; }
+#pmmVehicleSearch #results .vListStnd .cta button { margin-left:0px; text-transform:uppercase; background:url('/usr/theme/image/vstnd_cta_arrow.png') no-repeat top right; background-color:#000; color:#fff; border:0px; padding-right:35px; margin-right:5px; }
+#pmmVehicleSearch .vListStnd label { cursor:auto; }
+#pmmVehicleSearch .vListStnd ul.vData li.col2 ul { padding-left:10px; }
+#pmmVehicleSearch .vListStnd ul.vData li.col2 ul li { font-size:11px; }
+#results .vListStnd ul.vData li.col2 ul li label, #results .vListStnd ul.vData li.col3 ul li label { text-align:left; width:50px; }
+#pmmVehicleSearch .vListStnd .prices { width:190px; }
+#pmmVehicleSearch .prices .purchasePrice .price1 label, .prices .purchasePrice .price1 span { font-size:12px; color:#999999; }
+#pmmVehicleSearch .prices .purchasePrice label, .prices .purchasePrice span { font-family:Verdana, Geneva, sans-serif; }
+#pmmVehicleSearch .prices .purchasePrice label { font-weight:bold; }
+#pmmVehicleSearch .prices .priceList .price2 label, .vListStnd .priceList .vsrch_pricing_savings { color:#d4002d; }
+#pmmVehicleSearch .prices .purchasePrice span, .prices .priceList .price2 span { font-weight:normal; color:#d4002d; }
+
+/* Inventory Listing - Search Filters */
+.yui-b #srchFilter { background-color:transparent; border:0px; padding-left:0px; width:180px; padding-bottom:40px; padding-top:20px; }
+.yui-b #srchFilter li { font-size:11px; }
+
+.yui-b #srchFilter li a:hover { text-decoration:underline; }
+.yui-b #srchFilter .section h4, .yui-b #srchFilter .section h3 { padding: 5px 5px 5px 0px; font-size:11px; font-weight:bold; border-top:none; }
+.yui-b #srchFilter .refineLst { margin:0px; }
+.yui-b #srchFilter input, .yui-b #srchFilter select { font-weight:normal; }
+
+#searchForm #doSearch:hover, #searchForm #doNewSearch:hover { color:#fff; }
+
+.results-stats-pagenum, .results-stats-pager {float:right;}
+.vListStnd ul.vData li.col2, .vListStnd ul.vData li.col3 {overflow:visible!important;}
+.disclaimer {font-size: 75%;margin: 20px;padding-bottom: 20px;padding-top:20px;text-align: left;width:940px; margin:0 auto;}
+.disclaimer p {margin-bottom:10px;}
+#flashcontent {display:none;}
+
+/*
+#pg-vspecs #bd {width:940px; margin-left:30px; margin-top:20px;}
+#pg-vspecs .topCol1 {padding:2px 10px; margin-top:10px; }
+#pg-vspecs .topCol2 {margin-bottom:5px; margin-top:5px; }
+#pg-vspecs  #vData {width:275px;}
+#pg-vspecs .hp_foot { margin-left:0px!important;}
+
+body#pg-vspecs.used ul.callsToAction li.contact {background:url("/usr/image/cashandrewards.jpg") no-repeat; height:213px;}
+body#pg-vspecs.used ul.callsToAction li.contact a {  line-height: 0; font-size: 0; color: transparent; padding: 10px 90px 190px;}
+body#pg-vspecs.new ul.callsToAction li.contact {background:url("/usr/image/reality-check.jpg") no-repeat; height:100px;}
+body#pg-vspecs.new ul.callsToAction li.contact a {  line-height: 0; font-size: 0; color: transparent; padding: 10px 90px 190px;}
+*/
+
+/*############################################*/
+/*              Vehicle Details               */
+/*############################################*/
+#pg-vspecs .topCol1, #pg-vspecs .topCol2 { padding:0px; border:0px; }
+#pg-vspecs .topCol1 { background-color:#efefef; padding:20px; }
+#pg-vspecs .topCol2 { width:485px; }
+#pg-vspecs #pg-vspecs-header h2 { font-size:100%; font-size:24px; font-family:Verdana, Geneva, sans-serif; color:#222222; font-weight:bold; line-height:100%; width:80%; }
+#pg-vspecs label { cursor:auto; }
+#pg-vspecs .row { border:0px; margin:0px; padding:0px; }
+#pg-vspecs #bd { padding-bottom:0px; }
+
+/* Top Tabs */
+#pg-vspecs .vSpecTabs { border-bottom:0px; padding-bottom:25px; border-bottom:1px solid #ccc; margin-bottom:35px; }
+#pg-vspecs .vSpecTabs li { background:url('/usr/theme/image/vstnd_cta_arrow.png') no-repeat top right; background-color:#000; border:0px; font-weight:normal; text-transform:uppercase; padding:4px 35px 4px 10px; }
+#pg-vspecs .vSpecTabs li:hover { background-color:#000; }
+#pg-vspecs .vSpecTabs li a { color:#fff; font-size:100%; font-size:11px; text-decoration:none; }
+
+/* Image Gallery */
+body#pg-vspecs #detailPic1 { border:none; margin-bottom:20px; margin-top:20px; }
+body#pg-vspecs .wdgt { background-color:transparent; margin-bottom:20px; }
+body#pg-vspecs .wdgt div.title { margin-left:0px; margin-bottom:10px; text-transform:uppercase; font-size:100%; font-size:11px; font-weight:normal; }
+.sample_gal img { margin-left:0px; }
+
+/* Payment Calculator */
+#pg-vspecs #vCalc.wdgt { width:300px; margin-top:55px; padding:0px; }
+#pg-vspecs #vCalc h3 { text-transform:uppercase; font-size:100%; font-size:16px; color:#222; padding:0px; padding-bottom:15px; padding-top:25px; border-top:1px solid #ccc; }
+#pg-vspecs #vCalc label { font-size:100%; font-size:11px; color:#444; font-weight:normal; }
+#pg-vspecs #vCalc input, #pg-vspecs #vCalc select { font-size:100%; font-size:12px; padding:5px; border:0px; }
+#pg-vspecs #vCalc td { padding-bottom:10px; }
+#pg-vspecs #vCalc table { margin:0px; }
+#pg-vspecs #vCalc #monthly { background-color:transparent; font-size:24px; font-family:Verdana, Geneva, sans-serif; padding:0px; color:#222; border-bottom:0px; }
+#pg-vspecs #vCalc #pmt-calc { background:url('/usr/theme/image/vstnd_cta_arrow.png') no-repeat top right; background-color:#000; border:0px; font-weight:normal; text-transform:uppercase; padding:5px 35px 6px 10px; color:#fff; font-size:11px; }
+
+
+/* Vehicle Price and Data */
+#pg-vspecs #vData { width:300px; }
+#pg-vspecs #vData .price1 label, #pg-vspecs #vData .price1 span { font-size:12px; color:#999999; }
+#pg-vspecs #vData .price2 label, #pg-vspecs #vData .price2 span, #pg-vspecs #vData .vsrch_pricing_savings label, #pg-vspecs #vData .vsrch_pricing_savings span { font-size:24px; color:#d4002d; font-weight:bold; }
+#pg-vspecs ul.vsrch_pricing li.price1, #pg-vspecs ul.vsrch_pricing li.price2 { padding-bottom:10px; }
+#pg-vspecs .vcard-simple { border-top:0px; }
+#pg-vspecs .vcard-simple h3 { font-weight:normal; font-size:100%; font-size:12px; padding-bottom:0px; }
+body#pg-vspecs #vMPG li { text-align:left; }
+body#pg-vspecs #vMPG .icon { background-position:left center; }
+#pg-vspecs #vData .vcard .tel, #pg-vspecs #vData .vcard .tel span { font-weight:bold; font-size:100%; font-size:24px; text-transform:capitalize; }
+
+
+/* Call to action buttons */
+body#pg-vspecs ul.callsToAction { width:170px; }
+body#pg-vspecs ul.callsToAction a { text-decoration:none; }
+body#pg-vspecs ul.callsToAction li { text-align:left; background:url('/usr/theme/image/cta_red_arrow.png') no-repeat top right; background-color:#d4002d; color:#fff; text-transform:uppercase; margin-bottom:5px; }
+body#pg-vspecs ul.callsToAction li:hover { background-color:#d4002d;  }
+body#pg-vspecs ul.callsToAction li:hover a:hover { color:#fff; text-decoration:none; }
+body#pg-vspecs #vMPG { margin-top:40px; }
+
+
+/* Body Disclaimers */
+#pg-vspecs .vcard-simple .disclaimer { width:100%; padding:0px; padding-bottom:35px; }
+
+
+/* Vehicle Detail: map_google */
+#pg-vspecs #dlrInfo { padding-top:25px; border-top:1px solid #ccc; margin-top:15px; }
+#pg-vspecs .topCol2 #map_google { width:450px; margin-top:25px; border:none; margin-bottom:75px; }
+
+
+/* Vehicle Detail: Social Row */
+#pg-vspecs .vInfoExt { padding-left:0px; }
+.vInfoExt ul li { margin-left:0px; }
+
+
+/* Vehicle Detail: Specifications */
+#pg-vspecs .row-no-border { padding:0px; margin:0px; }
+#pg-vspecs .fullname-row { background-color:#000; color:#fff; font-size:100%; font-size:18px; font-weight:bold; padding:10px 20px 15px 20px; margin: 20px 0;  }
+#pg-vspecs #factOpts h2 { padding:20px; background-color:#efefef; margin-bottom:0px; font-size:100%; font-size:16px; }
+#pg-vspecs .vInfoToolbar { display:none; }
+#pg-vspecs #factOpts ul.options { margin-left:0px; }
+#factOpts li.options div { background-color:transparent; border-bottom:1px solid #ddd; border-top:0px; padding-left:20px; padding-bottom:10px; padding-top:10px; }
+#pg-vspecs .pane { width:298px; border-right:1px solid #ddd; padding:0px; margin:0px; font-size:100%; font-size:12px; }
+#pg-vspecs #vspecs_ext.pane { border-right:0px; }
+#pg-vspecs .pane h2 { padding-left:20px; border-bottom:1px solid #ddd; margin:0px; font-size:100%!important; font-size:16px!important; }
+#pg-vspecs .vSpecsLst { padding-top:15px; }
+#pg-vspecs .vSpecsLst li { padding-left:20px; }
+#pg-vspecs .vSpecsLst li li { padding-left:0px; }
+#pg-vspecs .vSpecsLst label { font-size:100%; font-size:12px; }
+
+
+/* Featured Specials */
+
+.ad_exp {display:none;}
+.adTbl .ad_info {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+margin-bottom: 5px;
+padding: 5px 40px;
+}
+#pg-printfriendly .ad_pf a {display:none;}
+
+
+.adTbl .ad_info h3 {font-weight:bold; font-size:18px;}
+.ad_pf a, .ad_pf a:visited, .ad_pf a:hover {padding: 5px;border-radius: 10px;color: white;background-color:#CC0000; text-decoration: none;}
+.CMS_AdGroup {margin-left:-32px;}
+
+
+
+
+
+
+
+
+/*
+#################################
+MAIN NAV
+#################################
+*/
+
+
+/* this hides the text of the top level menu */
+#nav span { /* display: none; */ position:relative; top:12px;}
+#nav span:hover {color:#ffffff;}
+
+/* menu attributes */
+ul.jd_menu {padding:0px; list-style-type:none; border:none; height:25px; text-align:center;text-decoration:none!important;}
+ul.jd_menu ul {display:none; border:none; padding:0px; margin:0px; height:auto; }
+ul.jd_menu li {float:left; border:none; padding:0px; margin:0px;color:#ffffff; font-family:sans-serif; font-size:11px; color:#ffffff; font-weight:bold; line-height:14px; }
+
+/* sub-menu attributes */
+ul.jd_menu ul {position:absolute; display:none; list-style-type:none; margin:0px; padding: 0px; min-width:170px; height:auto; z-index: 1000000000; }
+ul.jd_menu ul li {float:none; margin:0px; }
+ul.jd_menu li li { border-left:1px solid; border-bottom:1px solid; border-right:1px solid; }
+#nav ul li ul li { height:auto; }
+ul.jd_menu li { cursor:pointer; }
+
+
+/***************************************************************/
+/* notice: you should only have to edit values below this area */
+/***************************************************************/
+
+#nav {
+/* navigation image attributes */
+background-image:url("/usr/theme/image/navigation2.png");
+background-repeat:no-repeat;
+/* width of the navigation */
+width:940px;
+/* height of the navigation */
+height:42px;
+/* other attributes */
+margin:0 auto;
+padding:0px;
+clear:both;
+color:white;
+}
+
+
+#nav a {color:#FFF; text-decoration:none; text-transform:uppercase;}
+#nav a:hover {color:#ffffff;}
+#nav:hover {border-top:10px d4002d;}
+
+/***********************/
+/*** menu attributes ***/
+/***********************/
+
+/* controls drop down menu highlight */
+ul.jd_menu li ul li  { text-align:left ;}
+ul.jd_menu li ul li.jdm_hover { text-align:left ;}
+ul.jd_menu li ul li.jdm_hover a {  font-size:11px; }
+/* controls the padding of the drop down menu buttons */
+ul.jd_menu li li { padding:5px 5px 5px 8px; }
+/* controls the width of the drop down menu buttons */
+ul.jd_menu li li { width:160px; }
+/* controls the color of the borders of the drop down menu buttons */
+ul.jd_menu li li { border-bottom-color:#313131; border-left-color:#313131; border-right-color:#313131; }
+/* controls the color of the background of the drop down menu buttons */
+ul.jd_menu li li { background-color:#292929; }
+ul.jd_menu li li { background-color:#292929; }
+/* controls the color of the text of the drop down menu buttons */
+ul.jd_menu li ul li a {color:#ffffff; }
+ul.jd_menu li ul li:hover {font-size:11px; }
+/* controls the color of the text (hover state) of the drop down menu buttons */
+ul.jd_menu li li.jdm_hover a{ color:#ffffff; } 
+
+
+
+/* important: the height needs to match the navigation height */
+#nav li, #nav a.top-lvl { height:42px; display:block; }
+
+/* controls with hit area for the tab buttons */
+.jd-home {width: 63px; }
+.jd-newvehicles {width: 104px; }
+.jd-specials { width: 94px; background:url("/usr/theme/image/navigation2.png") -167px -42px no-repeat;}
+.jd-commercial {width: 155px; }
+.jd-preowned {width: 87px; }
+.jd-rental {width: 69px; }
+.jd-finance {width: 65px; }
+.jd-serviceparts {width: 114px; }
+.jd-about {width: 94px; }
+.jd-facebook {width: 95px; }
+
+
+
+/* controls the nav image when hover state */
+.jd-home a.top-lvl:hover, ul.jd_menu li.jd-home.jdm_hover {background:url("/usr/theme/image/navigation2.png") 0px -42px no-repeat; font-size:11px; }
+ul.jd_menu li.jd-newvehicles.jdm_hover, ul.jd_menu li.jd-newvehicles.jdm_active { background:url("/usr/theme/image/navigation2.png") -63px -42px no-repeat; font-size:11px; }
+ul.jd_menu li.jd-specials.jdm_hover, ul.jd_menu li.jd-specials.jdm_active {/*background:url("/usr/theme/image/navigation2.png") -167px -42px no-repeat;*/ font-size:11px; }
+ul.jd_menu li.jd-commercial.jdm_hover, ul.jd_menu li.jd-commercial.jdm_active {background:url("/usr/theme/image/navigation2.png") -261px -42px no-repeat; font-size:11px; }
+ul.jd_menu li.jd-preowned.jdm_hover, ul.jd_menu li.jd-preowned.jdm_active {background:url("/usr/theme/image/navigation2.png") -416px -42px no-repeat; font-size:11px; }
+ul.jd_menu li.jd-rental.jdm_hover, ul.jd_menu li.jd-rental.jdm_active {background:url("/usr/theme/image/navigation2.png") -503px -42px no-repeat; font-size:11px; }
+ul.jd_menu li.jd-finance.jdm_hover, ul.jd_menu li.jd-finance.jdm_active {background:url("/usr/theme/image/navigation2.png") -572px -42px no-repeat; font-size:11px; }
+ul.jd_menu li.jd-serviceparts.jdm_hover, ul.jd_menu li.jd-serviceparts.jdm_active {background:url("/usr/theme/image/navigation2.png") -637px -42px no-repeat; font-size:11px; }
+/*ul.jd_menu li.jd-parts.jdm_hover, ul.jd_menu li.jd-parts.jdm_active {background:url("/usr/theme/image/navigation2.png") -692px -42px no-repeat; font-size:11px;}*/
+ul.jd_menu li.jd-about.jdm_hover, ul.jd_menu li.jd-about.jdm_active {background:url("/usr/theme/image/navigation2.png") -751px -42px no-repeat; font-size:11px; }
+ul.jd_menu li.jd-facebook.jdm_hover, ul.jd_menu li.jd-facebook.jdm_active {background:url("/usr/theme/image/navigation2.png") -845px -42px no-repeat; font-size:11px;}
+
+/* OPTIONAL - move the buttons to the right */
+/*ul.jd_menu { margin-left:304px; } */
+
+/* IE6 FIXES */
+* html ul.jd_menu li.jd-home.jdm_hover, * html ul.jd_menu li.jd-home.jdm_active { background-image:none; }
+* html ul.jd_menu li.jd-service.jdm_hover, * html ul.jd_menu li.jd-service.jdm_active { background-image:none; }
+* html ul.jd_menu li.jd-about.jdm_hover, * html ul.jd_menu li.jd-about.jdm_active { background-image:none; }
+* html ul.jd_menu li.jd-repair.jdm_hover, * html ul.jd_menu li.jd-repair.jdm_active { background-image:none; }
+* html ul.jd_menu li.jd-refinishing.jdm_hover, * html ul.jd_menu li.jd-refinishing.jdm_active { background-image:none; }
+* html ul.jd_menu li.jd-dealership.jdm_hover, * html ul.jd_menu li.jd-dealership.jdm_active { background-image:none; }
+* html ul.jd_menu li.jd-contact.jdm_hover, * html ul.jd_menu li.jd-contact.jdm_active { background-image:none; }
+
+* html ul.jd_menu li ul li a:visited {color:#838383; }
+* html ul.jd_menu li li.jdm_hover a:hover { color:#ffffff; } 
+
+/* parallax concept */
+
+body#pg-parallax {background-repeat:repeat-y; background-position:50% 0; background-color:#000000;  }
+body#pg-parallax #pmm-doc-995, body#pg-parallax #pmm-doc-910 {background-color:transparent;margin: auto;text-align: left;}
+body#pg-parallax .pmm-yui-t1 .yui-b #side-nav, body#pg-parallax #ft, body#pg-parallax .disclaimer,  body#pg-parallax #footer {display:none;}
+body#pg-parallax .pmm-yui-t1 #yui-main { margin-right: 27px;margin-top: 33px;min-height: 750px;width: 939px !important;border:0;}
+body#pg-parallax #pmm-bd-c img {display:block; margin:30px auto;}
+body#pg-parallax #concierge-panel, body#pg-parallax #hd {display:none;}
+
+#bg-parallax {background: url("/usr/image/parallax/2014-gc-gallery-bg.jpg") no-repeat fixed 50% 50% #000000; height: 3500px; left: 0;margin: 0 auto;position: absolute;top: 0;width: 100%;z-index: -9;}
+#top-parallax {position:absolute; z-index:9; top:0px; }
+
+
+/* Service Appointment Styles */
+#pg-service-appointment #bd{width:960px; margin: 0 auto;}
+#pg-service-appointment .pmm-yui-t1 #yui-main .yui-b{ margin: 10px;}
+#pg-service-appointment{font-family: Arial, Helvetica, sans-serif;}
+#pg-service-appointment .pmm-bd-h{font-size: 24px; font-weight: bold; margin-left: 10px;}
+
+/* Service Appointment for Selman 3 Step Form */
+
+/* Onload Hide the submit button and sections of the service appointment */
+.btnSubmit, #serviceAppointment__section1, #serviceAppointment__section2, #serviceAppointment__section3 {display: none;}
+
+/* Service Appointment Buttons  */
+#submit{border: 1px solid transparent;}
+.step-btns{margin: 20px 0;}
+.step-btn, #submit{min-width: 154px; font-size: 24px!important; cursor: pointer; text-align: center; display: inline-block; padding: 5px 10px; margin-right: 10px; font-weight: bold;}
+.step-btn-continue, #submit{background-color: #F4BC00; color: #fff!important;}
+.step-btn-continue:hover, #submit:hover{color: #000!important; border: 1px solid #000000!important;}
+.step-btn-back{background-color: #DEDEDE; border: 1px solid transparent;}
+.step-btn-back:hover{border: 1px solid #333;}
+
+/* Calendar Styles */
+.ui-datepicker-days-cell{text-align: center;}
+
+/* Service Appointment Confirmation */
+#serviceAppointment_confirmation{float: right; margin-right: 20px; margin-top: 80px; width: 50%;}
+#serviceAppointment_confirmation h4{font-weight: bold; font-size: 16px; margin: 20px 0;}
+#serviceAppointment_confirmation p{margin-left: 20px;}
+#serviceAppointment_confirmation strong{font-weight: bold;}
+#serviceAppointment_confirmation .edit{font-size: 12px; color: #ddd;}
+#serviceAppointment_confirmation .goToStep{color: #F4BC00; cursor: pointer;}
+#serviceAppointment_confirmation .goToStep:hover{color: #428bca; text-decoration: underline;}
+
+/* Service Appointment Steps */
+#pg-service-appointment #serviceAppointmentSteps{text-align: center;}
+#pg-service-appointment .msgReq, #pg-service-appointment .msg, #pg-service-appointment .noteAsReq{color: #F4BC00;}
+#pg-service-appointment .frmLead .frmSection h4{font-size: 24px; font-weight: bold; border-bottom: 1px solid #A2A2A2; text-indent: 10px; background-color: #DEDEDE; border-top: none; padding: 10px 0; margin: 10px 0 20px;}
