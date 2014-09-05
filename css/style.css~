@@ -64,7 +64,7 @@ div.versa {width:580px!important; margin-right:50px;}
 #header .header-rgt { width:500px; height:103px; float:left; border-top: #cf1431 4px solid;}
 #header p.united-nissan {float:left; margin-top:23px; font-size:26px; }
 #header p.sales-address {float:right; margin-top:23px; text-align:right;}
-#header p.sales-address span.sales {font-weight:bold; color: green;}
+#header p.sales-address span.sales {font-weight:bold;}
 #header p.sales-address span.addr {margin-top:10px; position:relative; top:5px;}
 
 /* Footer */
